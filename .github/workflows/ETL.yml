@@ -36,7 +36,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pandas pytest dbt-postgres
+          pip install -r requirements.txt
 
       - name: Run ETL Script
         run: python python_script.py
